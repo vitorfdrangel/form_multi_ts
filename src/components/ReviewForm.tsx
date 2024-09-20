@@ -1,8 +1,6 @@
 import React from "react";
 
-type Props = {};
-
-const ReviewForm = (props: Props) => {
+const ReviewForm = () => {
   return <div>ReviewForm</div>;
 };
 
