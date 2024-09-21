@@ -24,7 +24,7 @@ const UserForm = ({ data, updateFieldHandler }: UserProps) => {
       <div className="form-control">
         <label htmlFor="email">E-mail:</label>
         <input
-          type="text"
+          type="email"
           name="email"
           id="email"
           placeholder="Digite o seu e-mail"

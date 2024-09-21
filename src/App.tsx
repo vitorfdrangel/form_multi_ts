@@ -38,7 +38,7 @@ function App() {
 
   const formComponents = [
     <UserForm data={data} updateFieldHandler={updateFieldHandler} />,
-    <ReviewForm />,
+    <ReviewForm data={data} updateFieldHandler={updateFieldHandler} />,
     <Thanks />,
   ];
 
@@ -55,7 +55,7 @@ function App() {
       </div>
       <div className="form-container">
         <Steps currentStep={currentStep} />
-        <form onSubmit={(e) => changeStep(currentStep, e)}>
+        <form onSubmit={(e) => changeStep(currentStep + 1, e)}>
           <div className="inputs-container">{changeComponent}</div>
           <div className="actions">
             <button type="button" onClick={() => changeStep(currentStep - 1)}>
