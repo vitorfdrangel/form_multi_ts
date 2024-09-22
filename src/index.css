@@ -11,5 +11,10 @@ p {
 }
 
 body {
-  background-color: #f9fafc;
+  background-color: #f0f0f0;
+}
+
+input,
+textarea {
+  outline: none;
 }
